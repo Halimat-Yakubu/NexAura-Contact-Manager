@@ -9,6 +9,7 @@ extern int ids[500];
 extern int count;
 
 void add_contact();
+int verify_email(char emails[50]);
 void get_contact_by_id();
 void update_contact_by_id();
 void delete_contact_by_id();
