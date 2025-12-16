@@ -159,10 +159,10 @@ Contact added successfully!
 6. Save and Exit
 Enter choice: 1
 
-
 ID    | First Name      | Last Name       | Phone Number    | Email
 ------------------------------------------------------------------------
 1     | Halimat         | Yakubu          | 09048473861     | halimatyakubu50@gmail.com
+
 
 === Contact Manager ===
 1. List all contacts
@@ -180,6 +180,7 @@ Last Name: Atolagbe
 Phone Number: 07040707136
 Email: harliyahatolagbe@gmail.com
 Contact updated.
+
 
 === Contact Manager ===
 1. List all contacts
@@ -205,7 +206,7 @@ ID    | First Name      | Last Name       | Phone Number    | Email
 Enter choice: 5
 Enter ID to delete: 1
 
-Contact deleted successfully.
+Contact deleted.
 
 ```
 
