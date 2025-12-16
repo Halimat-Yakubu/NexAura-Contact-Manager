@@ -1,26 +1,15 @@
-# NexAura-Contact-Manager
-This repository contains code and necessary documentation for a simple command-line Contact Manager. 
-#This application is created entirely in C, specifically highlighting the following topics: 
-● Modular Programming 
-● Arrays
-● Handling csv files in C
-
-The program carries out basic CRUD operations:
-● Add a contact
-● List all contacts
-● Show a single contact by ID
-● Update a contact
-● Delete a contact
-
-
----
 
 • Contact Manager CLI Application
 
 A simple command-line contact management system written in C that performs CRUD (Create, Read, Update, Delete) operations on contact records with persistent CSV storage.
 
+This application is created entirely in C, specifically highlighting the following topics: 
+● Modular Programming 
+● Arrays
+● Handling csv files in C
 
-• Features
+
+## • Features
 
 - Add new contacts with unique IDs
 - List all contacts in tabular format
@@ -28,12 +17,11 @@ A simple command-line contact management system written in C that performs CRUD 
 - Update existing contact information
 - Delete contacts
 - Persistent storage using CSV files
-- Automatic directory creation for data storage
 - Simple and intuitive CLI interface
 
 
 
-• Project Structure
+• ## Project Structure
 
 ```
 contact_manager/
@@ -46,23 +34,24 @@ contact_manager/
 └── README.md           # This file
 ```
 
+
 • Data Storage Location:
 ```
 ~/.local/share/contact_manager/contacts.csv
 ```
 
----
 
-• Requirements
+
+• ## Requirements
 
 - **Operating System:** Linux/Unix-based system (tested on Ubuntu)
 - **Compiler:** GCC (GNU Compiler Collection)
 - **C Standard:** C99 or later.
 ```
 
----
 
-• Installation
+
+• ## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -76,23 +65,19 @@ contact_manager/
    ```
    You should see: `main.c`, `contacts.c`, `contacts.h`, `file_io.c`, `file_io.h`
 
----
 
-• Compilation
 
-### Method 1: Using Makefile (Recommended)
+
+• ## Compilation
+
+- Method 1: Using Makefile 
 
 If you have a Makefile:
 ```bash
 make
 ```
 
-To clean build files:
-```bash
-make clean
-```
-
-### Method 2: Manual Compilation (Without Makefile)
+- Method 2: Manual Compilation (Without Makefile)
 
 **Option A - Single Command:**
 ```bash
@@ -110,120 +95,116 @@ gcc -c file_io.c -o file_io.o
 gcc main.o contacts.o file_io.o -o contact_manager
 ```
 
-
-### Expected Output:
+Expected Output:
 If compilation is successful, you'll see no error messages and a new executable file named `contact_manager` will be created.
 
-To verify:
-```bash
-ls -l contact_manager
-```
 
----
 
-## How to Run
 
-### Start the Program:
+## • How to Run
+
+- Start the Program:
 ```bash
 ./contact_manager
 ```
 
-### First Run:
-On the first run, the program will:
-1. Create the directory `~/.local/share/contact_manager/` if it doesn't exist.
-2. Show the main menu with a prompt to get started.
+- First Run:
+On the first run, the program will show the main menu with a prompt to get started.
 
----
 
-## Usage Guide
 
-### Main Menu Options:
+
+## • Usage Guide
+
+- Main Menu Options:
 
 ```
 === Contact Manager ===
-1. Add Contact
-2. List All Contacts
-3. View Contact by ID
+1. List all contacts
+2. Show Contact by ID
+3. Add Contact 
 4. Update Contact
 5. Delete Contact
-6. Exit
+6. Save and Exit
+Enter choice: 
 ```
 
----
 
-• Sample Output
+
+## • Sample Output
 
 ```bash
 $ ./contact_manager
-No existing contacts file found. Starting fresh.
 
 === Contact Manager ===
-1. Add Contact
-2. List All Contacts
-3. View Contact by ID
+1. List all contacts
+2. Show Contact by ID
+3. Add Contact 
 4. Update Contact
 5. Delete Contact
-6. Exit
-Choose an option: 1
-First Name: Alice
-Last Name: Johnson
-Phone Number: 08011112222
-Email: alice@mail.com
+6. Save and Exit
+Enter choice: 3
+First Name: Halimat
+Last Name: Yakubu 
+Phone Number: 09048473861
+Email: halimatyakubu50@gmail.com
 Contact added successfully! 
 
+
 === Contact Manager ===
-1. Add Contact
-2. List All Contacts
-3. View Contact by ID
+1. List all contacts
+2. Show Contact by ID
+3. Add Contact 
 4. Update Contact
 5. Delete Contact
-6. Exit
-Choose an option: 2
+6. Save and Exit
+Enter choice: 1
+
 
 ID    | First Name      | Last Name       | Phone Number    | Email
 ------------------------------------------------------------------------
-1     | Alice           | Johnson         | 08011112222     | alice@mail.com
+1     | Halimat         | Yakubu          | 09048473861     | halimatyakubu50@gmail.com
 
 === Contact Manager ===
-1. Add Contact
-2. List All Contacts
-3. View Contact by ID
+1. List all contacts
+2. Show Contact by ID
+3. Add Contact 
 4. Update Contact
 5. Delete Contact
-6. Exit
-Choose an option: 6
-Saved 1 contacts to file.
-Goodbye!
+6. Save and Exit
+Enter choice: 4
+
 ```
 
----
 
-• Technical Details
 
-### Data Structure:
+## • Technical Details
+
+• Data Structure:
 - Uses **parallel arrays** (not structs)
 - Maximum capacity: **500 contacts**
 - Fields stored: ID, First Name, Last Name, Phone Number, Email
 
-### CSV Format:
+
+• CSV Format:
 ```csv
 id,first_name,last_name,phone_number,email
 1,John,Doe,08012345678,john@example.com
 2,Mary,Ada,08098765432,mary@site.com
 ```
 
-### File Storage:
+• File Storage:
 - Location: `~/.local/share/contact_manager/contacts.csv`
 - Data is loaded on program start
 - Data is saved when selecting "Exit" option
 
----
 
-## Team Members
 
-- Aliyah Atolagble Salami - harliyah 
+## • Team Members
+
+- Aliyah Atolagble Opeyemi - harliyah 
 - Halimat Yakubu Sadia - halimatyakubu50@gmail.com
-- Demo Video: [Link to video]
+- Demo Video: 
 
----
+
 
