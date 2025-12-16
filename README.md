@@ -21,7 +21,7 @@ This application is created entirely in C, specifically highlighting the followi
 
 
 
-• ## Project Structure
+## • Project Structure
 
 ```
 contact_manager/
@@ -42,16 +42,15 @@ contact_manager/
 
 
 
-• ## Requirements
+## • Requirements
 
 - **Operating System:** Linux/Unix-based system (tested on Ubuntu)
 - **Compiler:** GCC (GNU Compiler Collection)
 - **C Standard:** C99 or later.
-```
 
 
 
-• ## Installation
+## • Installation
 
 1. **Clone the repository:**
    ```bash
@@ -68,7 +67,7 @@ contact_manager/
 
 
 
-• ## Compilation
+## • Compilation
 
 - Method 1: Using Makefile 
 
