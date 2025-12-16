@@ -173,6 +173,27 @@ ID    | First Name      | Last Name       | Phone Number    | Email
 6. Save and Exit
 Enter choice: 4
 
+Enter ID to update: 1
+Updating contact ID 1:
+First Name: Aliyah
+Last Name: Atolagbe
+Phone Number: 09078900
+Email: harliyah50@gmail.com
+Contact updated
+
+=== Contact Manager ===
+1. List all contacts
+2. Show Contact by ID
+3. Add Contact 
+4. Update Contact
+5. Delete Contact
+6. Save and Exit
+Enter choice: 1
+
+ID    | First Name      | Last Name       | Phone Number    | Email
+------------------------------------------------------------------------
+1     | Aliyah          | Atolagbe       | 08011112222     | harliyah@mail.com
+
 ```
 
 
