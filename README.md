@@ -236,7 +236,7 @@ id,first_name,last_name,phone_number,email
 
 ## • Team Members
 
-- Aliyah Atolagble Opeyemi - harliyah 
+- Aliyah Atolagble Opeyemi - harliyahatolagbe@gmail.com
 - Halimat Yakubu Sadia - halimatyakubu50@gmail.com
 - Demo Video: 
 
