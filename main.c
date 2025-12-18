@@ -11,18 +11,23 @@ while(1){
   scanf("%d", &choice);     
   if(choice == 1){    
     list_contacts();  
+    continue;
   }    
   else if(choice == 2){     
-    get_contact_by_id();    
+    get_contact_by_id();  
+    continue;
   }     
   else if(choice == 3){        
-    add_contact();     
+    add_contact();    
+    continue;
   }       
   else if(choice == 4){      
     update_contact_by_id();  
+    continue;
   }    
   else if(choice == 5){    
-    delete_contact_by_id();    
+    delete_contact_by_id(); 
+    continue;
   }     
   else if(choice == 6){    
     save_contact_to_file();  
