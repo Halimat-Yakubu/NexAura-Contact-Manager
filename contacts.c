@@ -25,7 +25,7 @@ void add_contact(){
 char fname[50];    
 char lname[50];    
 char email[100];    
-char phone[16];    
+char phone[20];    
 int id;    
 while(1){	
   printf("First Name: ");
@@ -48,14 +48,21 @@ while(1){
 printf("Phone: ");
 scanf("%15s", phone);
 int len = strlen(phone);
-if(len < 7 || len > 15){
-  printf("Phone number must be between 7 - 15 digits.\n");
-  continue;	}	for(int i = 0; i < len ; i++){
+if(len < 7 || len > 20){
+  printf("Phone number must be between 7 - 20 digits.\n");
+  continue;	}
+  int valid = 1;
+  for(int i = 0; i < len ; i++){
   if(!isdigit(phone[i])){
+    valid = 0;
+    break;
+  }    
+  }	
+  if(!valid){
     printf("Phone number must be digits.\n");
     continue;
-  }                
-}	break;
+  }
+  break;
 }
 while(1){
 printf("Email: ");
@@ -113,7 +120,7 @@ void update_contact_by_id(){
   char fname[50];   
   char lname[50];   
   char email[100];    
-  char phone[16];  
+  char phone[20];  
   int id;   
   printf("Enter the ID to update: "); 
   scanf("%d", &id); 
@@ -149,8 +156,8 @@ void update_contact_by_id(){
     printf("Phone: ");      
     scanf("%15s", phone);    
     int len = strlen(phone);
-    if(len < 7 || len > 15){   
-      printf("Phone number must be between 7 - 15 digits.\n");
+    if(len < 7 || len > 20){   
+      printf("Phone number must be between 7 - 20 digits.\n");
       continue;           
     }	
     int valid = 1;		
