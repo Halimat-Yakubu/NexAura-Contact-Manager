@@ -195,6 +195,7 @@ void update_contact_by_id(){
   strcpy(last_names[index], lname);  
   strcpy(phone_numbers[index], phone);  
   strcpy(emails[index], email); 
+  printf("Contact updated.");
 }
 void delete_contact_by_id(){    
 int id;   
@@ -223,5 +224,8 @@ for(int i = index; i < count - 1; i++){
   strcpy(emails[i], emails[i+1]);
 }   
 count--;  
+for(int i = 0; i < count; i++){
+  ids[i] = i + 1;
+}
 printf("Contact deleted");
 }
