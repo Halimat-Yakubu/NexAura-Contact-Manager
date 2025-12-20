@@ -1,10 +1,11 @@
 #ifndef CONTACTS_H
 #define CONTACTS_H
 
+#define MAX CONTACTS 500
 extern char first_names[500][50];
 extern char last_names[500][50];
-extern char phone_numbers[500][20];
 extern char emails[500][100];
+extern char phone_numbers[500][20];
 extern int ids[500];
 extern int count;
 
